@@ -3,9 +3,9 @@
 
 float linear_regression_prediction(float* features, int n_feature) 
 {
-    float res = 1.005901; 
+    float res = 1.038166; 
     int n_thetas = 2; 
-    float thetas[] = {3.5356854652854177,-207.78811378698487}; 
+    float thetas[] = {3.1758576989688354,-222.96141367816955}; 
     for (int i = 0; i < n_thetas; i++) 
     { 
         res += features[i] * thetas[i]; 
