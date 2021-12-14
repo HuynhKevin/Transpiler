@@ -68,7 +68,7 @@ if __name__ == '__main__':
     f.close()
     os.system("gcc linear_regression.c")
     print("Sklearn predict: \n", model.predict(X_test[:3]) , "\n")
-    print ("Transpiler predict:")
+    print("Transpiler predict:")
     for i in range(len(X_test[:3])):
         command = "./a.out " + str(X_test[i][0]) + " " +  str(X_test[i][1])
         os.system(command)
